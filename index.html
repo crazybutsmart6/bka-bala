@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Simulasi Login WhatsApp</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#e5ddd5;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    background:white;
+    width:320px;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,0.2);
+    text-align:center;
+}
+
+.logo{
+    font-size:24px;
+    color:#25D366;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin:8px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#25D366;
+    border:none;
+    color:white;
+    font-size:16px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1ebe5b;
+}
+
+.info{
+    margin-top:15px;
+    color:gray;
+    font-size:12px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="logo">WhatsApp</div>
+
+<input type="text" id="nomor" placeholder="Nomor Telepon">
+<input type="password" id="kode" placeholder="Kode Verifikasi">
+
+<button onclick="login()">Masuk</button>
+
+<p class="info">Ini hanya simulasi tampilan login</p>
+
+</div>
+
+<script>
+function login(){
+    let nomor=document.getElementById("nomor").value;
+    let kode=document.getElementById("kode").value;
+
+    if(nomor && kode){
+        alert("Login berhasil (SIMULASI)");
+    }else{
+        alert("Isi data dulu!");
+    }
+}
+</script>
+
+</body>
+</html>
